@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: repeating-linear-gradient(to right, #57007B, #57007B 10%, #4D006D 10%, #4D006D 20%, #43005F 20%, #43005F 30%, #390051 30%, #390051 40%, #2F0043 40%, #2F0043 50%, #250035 50%, #250035 60%, #1B0027 60%, #1B0027 70%, #110019 70%, #110019 80%, #07000B 80%, #07000B 90%, #000000 90%, #000000);
+  background-repeat: repeat-y;
+  background-size: 100% 10%;
+}
+
+.icons-contact{
+  margin-bottom: 3rem;
+}
+
+.figure{
+  width: 400px;
+  height: 400px;
+  background-color: #000000;
+  border-radius: 43% 57% 60% 40% / 30% 33% 67% 70%;
+  box-shadow: 10px 10px 20px rgba(78, 78, 78, 0.5);
+  background-size: cover;
+  filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 1.7));
+  overflow: hidden;
+  display: flex; 
+  flex-flow: column;
+}
+.figure img{
+  position: absolute;
+  left: 100px;
+  width: 300px;
+  height:auto;
+}
+.container-img{
+  display: flex;
+  justify-content:center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .figure {
+    width:300px;
+    height:300px;
+  }
+  .figure img{
+    width:300px;
+    height: auto;
+    left: 50px;
+  }
+  
+}
+
+.btn {
+  background: linear-gradient(
+    92.23deg,
+    #ff56f6 21.43%,
+    #b936ee 50.63%,
+    #3bace2 100%,
+    #406aff 117.04%
+  );
+  
+  filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 1.7));
+}
+
+.btn:hover {
+  background: linear-gradient(
+    92.23deg,
+    #406aff 21.43%,
+    #3bace2 50.63%,
+    #b936ee 100%,
+    #ff56f6 117.04%
+  );
+}
+
+.gradient,
+.active {
+  background: linear-gradient(
+    92.23deg,
+    #406aff 21.43%,
+    #3bace2 50.63%,
+    #b936ee 100%,
+    #ff56f6 117.04%
+  );
+}
+
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+@layer base {
+  body {
+    @apply font-secondary text-lg leading-8 text-white;
+  }
+  .h2 {
+    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+  }
+  .h3 {
+    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+  }
+  .h4{
+    @apply font-primary font-semibold text-[18px] mb-6 leading-[46px];
+  }
+  .btn {
+    @apply text-[10px] rounded-full font-primary text-white font-medium;
+  }
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+  .btn-link {
+    @apply text-base;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+  }
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+}
+
+ #about, #services, #work{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
