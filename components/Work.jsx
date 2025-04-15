@@ -79,7 +79,7 @@ const Work = () => {
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/*img*/}
               <Image
-                src="/chat.png"
+                src="/globdeco.png"
                 alt="portfoliowork5"
                 width={widthValue}
                 height={heightValue}
@@ -91,7 +91,7 @@ const Work = () => {
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
                 <span className="text-gradient">
                   <a
-                    href="https://leanmaga.github.io/gpt3LandingPage/"
+                    href="https://glob-deco.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -101,7 +101,7 @@ const Work = () => {
               </div>
               {/*title*/}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3x1 text-white ">Chat GPT</span>
+                <span className="text-3x1 text-white ">GlobDeco</span>
               </div>
             </div>
           </motion.div>
@@ -180,7 +180,7 @@ const Work = () => {
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/*img*/}
               <Image
-                src="/stitch.jpg"
+                src="/stitch.png"
                 alt="portfoliowork3"
                 width={widthValue}
                 height={heightValue}
