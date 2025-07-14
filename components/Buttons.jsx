@@ -9,7 +9,7 @@ const Buttons = () => {
         <a href="#contact">Contáctame</a>
       </button>
       <Link
-        className="text-gradient btn-link"
+        className="text-gradient btn-link ml-4"
         href="/pdf/cv.pdf"
         passHref
         download="Leandro Magallanes Curriculum Vitae"

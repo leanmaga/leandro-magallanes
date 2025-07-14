@@ -17,7 +17,11 @@ const About = () => {
 
   return (
     <>
-      <section id="about" className="section" ref={ref}>
+      <section
+        id="about"
+        className="section relative min-h-screen overflow-hidden"
+        ref={ref}
+      >
         <div className="container mx-auto xs:text-center xs:items-center">
           <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
             {/*img*/}

@@ -52,7 +52,7 @@ const Redes = () => {
 
         <a
           className="hover:scale-150"
-          href="https://api.whatsapp.com/send?phone=5491127764823&text=Hola%20,te%20asesoramos%20por%20whatsapp%20gestiona%20tu%20compra%20por%20este%20canal."
+          href="https://api.whatsapp.com/send?phone=5491127764823&text=Hola%20,te%20escribo%20para"
           target="_blank"
           rel="noreferrer"
         >
