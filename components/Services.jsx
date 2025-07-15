@@ -252,9 +252,6 @@ const Services = () => {
                   d="M17 8l4 4m0 0l-4 4m4-4H3"
                 />
               </svg>
-
-              {/* Efecto shimmer */}
-              <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 rounded-xl" />
             </a>
           </motion.div>
         </motion.div>

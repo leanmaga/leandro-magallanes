@@ -440,7 +440,7 @@ const Work = () => {
               href="https://github.com/leanmaga"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-500 to-purple-600 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 hover:from-violet-600 hover:to-purple-700 hover:scale-105 group"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-500 to-purple-600 text-white font-semibold lg:py-3 lg:px-8 px-2 py-1  rounded-xl transition-all duration-300 hover:from-violet-600 hover:to-purple-700 hover:scale-105 group"
             >
               <span>Ver todos mis proyectos</span>
               <svg

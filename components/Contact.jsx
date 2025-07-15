@@ -256,7 +256,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={state.submitting}
-                  className="w-full relative overflow-hidden bg-gradient-to-r from-violet-500 to-purple-600 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 hover:from-violet-600 hover:to-purple-700 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed group"
+                  className="w-full relative overflow-hidden bg-gradient-to-r from-violet-500 to-purple-600 text-white font-semibold py-2 lg:py-4 lg:px-8 px-4 rounded-xl transition-all duration-300 hover:from-violet-600 hover:to-purple-700 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed group"
                 >
                   <span className="relative z-10 flex items-center justify-center gap-2">
                     {state.submitting ? (
