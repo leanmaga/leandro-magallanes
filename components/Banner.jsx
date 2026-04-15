@@ -20,23 +20,10 @@ const Banner = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} hero mx-auto flex flex-col items-center justify-center h-[100vh] relative z-10 px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-8 lg:py-12 text-center max-w-6xl`}
+        className={`${styles.innerWidth} hero mt-20 mx-auto flex flex-col items-center justify-center h-[100vh] relative z-10 px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-8 lg:py-12 text-center max-w-6xl pt-20 lg:pt-32`}
       >
         {/* Contenedor principal de contenido */}
-        <div className="w-full flex flex-col items-center justify-center space-y-8 lg:space-y-12">
-          {/* Badge decorativo */}
-          <motion.div
-            variants={fadeIn("down", 0.2)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="relative"
-          >
-            <div className="bg-gradient-to-r from-violet-500/20 to-purple-500/20 backdrop-blur-sm border border-violet-400/30 rounded-full px-6 py-2 text-sm font-medium text-violet-300">
-              <span className="relative z-10">✨ Desarrollador Frontend</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-violet-500/10 to-purple-500/10 rounded-full blur-sm" />
-            </div>
-          </motion.div>
+        <div className="w-full flex flex-col items-center justify-center space-y-12">
 
           {/* Título principal con efectos neón */}
           <motion.div
