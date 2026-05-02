@@ -12,7 +12,7 @@ const About = () => {
   const isInView = useInView(ref);
 
   const data =
-    "Desarrollador Frontend con experiencia en React y Next.js. Especializado en el mantenimiento y desarrollo de aplicaciones web modernas utilizando React JS y Next JS, con un enfoque en la creación de componentes reutilizables y módulos escalables. Amplio dominio en la gestión de estado con Redux, incluyendo Redux Toolkit y Redux-Saga para manejar flujos asincrónicos complejos.";
+    "Con más de 4 años de experiencia, trabajé en aplicaciones enterprise de alta complejidad para clientes globales (AB InBev), desarrollando módulos con React, TypeScript y Redux-Saga en equipos distribuidos. En paralelo, fundé PatagoniaScript, mi agencia digital, donde llevo proyectos de e-commerce end-to-end: desde la arquitectura hasta el deploy en producción, con MercadoPago, Clerk y Cloudinary. Me muevo cómodo entre el trabajo en equipo enterprise y el ownership total de un producto propio.";
 
   return (
     <section
@@ -37,181 +37,7 @@ const About = () => {
           viewport={{ once: false, amount: 0.25 }}
           className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20"
         >
-          {/* Sección visual moderna (reemplaza la Lottie) */}
-          <motion.div
-            variants={fadeIn("right", 0.3)}
-            className="flex-1 relative group"
-          >
-            {/* Contenedor principal con glassmorphism */}
-            <div className="relative bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-3xl border border-white/10 p-8 lg:p-12 overflow-hidden hover:border-violet-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-violet-500/10">
-              {/* Gradiente de resplandor en hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-violet-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
-
-              {/* Código animado de fondo */}
-              <div className="absolute inset-0 opacity-10 font-mono text-xs text-violet-300 overflow-hidden">
-                <div className="p-4 space-y-2">
-                  <div>const developer = {`{`}</div>
-                  <div className="ml-4">name: "Leandro Magallanes",</div>
-                  <div className="ml-4">role: "Frontend Developer",</div>
-                  <div className="ml-4">experience: "5+ years",</div>
-                  <div className="ml-4">
-                    technologies: ["React", "Next.js"],
-                  </div>
-                  <div className="ml-4">passion: "Creating amazing UX"</div>
-                  <div>{`}`};</div>
-                </div>
-              </div>
-
-              {/* Iconos flotantes de tecnologías - más grandes y espectaculares */}
-              <div className="relative z-10">
-                <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 place-items-center">
-                  {/* React Icon */}
-                  <motion.div
-                    animate={{
-                      rotate: [0, 360],
-                      scale: [1, 1.1, 1],
-                    }}
-                    transition={{
-                      duration: 8,
-                      repeat: Infinity,
-                      ease: "linear",
-                    }}
-                    className="flex justify-center"
-                  >
-                    <div className="relative p-6 lg:p-8 bg-gradient-to-r from-blue-400/20 to-cyan-500/20 rounded-3xl border border-blue-400/30 shadow-2xl shadow-blue-500/20 hover:shadow-blue-500/40 transition-all duration-300 group">
-                      <img
-                        src="/react.svg"
-                        alt="React"
-                        className="w-16 h-16 lg:w-20 lg:h-20 group-hover:scale-110 transition-transform duration-300 relative z-10"
-                      />
-                      {/* Pulse effect en hover */}
-                      <div className="absolute inset-0 bg-blue-400/20 rounded-3xl opacity-0 group-hover:opacity-100 animate-ping transition-opacity duration-300" />
-                    </div>
-                  </motion.div>
-
-                  {/* Next.js Icon */}
-                  <motion.div
-                    animate={{
-                      y: [-15, 15, -15],
-                      scale: [1, 1.05, 1],
-                    }}
-                    transition={{
-                      duration: 4,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                    }}
-                    className="flex justify-center"
-                  >
-                    <div className="relative p-6 lg:p-8 bg-gradient-to-r from-slate-600/20 to-slate-800/20 rounded-3xl border border-slate-400/30 shadow-2xl shadow-slate-500/20 hover:shadow-slate-500/40 transition-all duration-300 group">
-                      <img
-                        src="/next.svg"
-                        alt="Next.js"
-                        className="w-16 h-16 lg:w-20 lg:h-20 group-hover:scale-110 transition-transform duration-300 relative z-10"
-                      />
-                      {/* Pulse effect en hover */}
-                      <div className="absolute inset-0 bg-slate-400/20 rounded-3xl opacity-0 group-hover:opacity-100 animate-ping transition-opacity duration-300" />
-                    </div>
-                  </motion.div>
-
-                  {/* JavaScript Icon */}
-                  <motion.div
-                    animate={{
-                      rotate: [-10, 10, -10],
-                      scale: [1, 1.1, 1],
-                    }}
-                    transition={{
-                      duration: 6,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                    }}
-                    className="flex justify-center col-span-2 lg:col-span-1"
-                  >
-                    <div className="relative p-6 lg:p-8 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 rounded-3xl border border-yellow-400/30 shadow-2xl shadow-yellow-500/20 hover:shadow-yellow-500/40 transition-all duration-300 group">
-                      <img
-                        src="/js.svg"
-                        alt="JavaScript"
-                        className="w-16 h-16 lg:w-20 lg:h-20 group-hover:scale-110 transition-transform duration-300 relative z-10"
-                      />
-                      {/* Pulse effect en hover */}
-                      <div className="absolute inset-0 bg-yellow-400/20 rounded-3xl opacity-0 group-hover:opacity-100 animate-ping transition-opacity duration-300" />
-                    </div>
-                  </motion.div>
-                </div>
-
-                {/* Texto descriptivo de tecnologías */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 20 }}
-                  transition={{ delay: 0.5 }}
-                  className="mt-12 text-center"
-                >
-                  <h4 className="text-xl font-semibold text-white mb-4">
-                    Stack Tecnológico
-                  </h4>
-                  <p className="text-gray-300 leading-relaxed">
-                    Especializado en{" "}
-                    <span className="text-blue-400 font-semibold">React</span>{" "}
-                    para interfaces dinámicas,{" "}
-                    <span className="text-slate-300 font-semibold">
-                      Next.js
-                    </span>{" "}
-                    para aplicaciones full-stack y{" "}
-                    <span className="text-yellow-400 font-semibold">
-                      JavaScript
-                    </span>{" "}
-                    moderno para soluciones escalables.
-                  </p>
-                </motion.div>
-
-                {/* Partículas decorativas flotantes */}
-                <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  {[...Array(6)].map((_, i) => (
-                    <motion.div
-                      key={i}
-                      className="absolute w-1 h-1 bg-violet-400/40 rounded-full"
-                      style={{
-                        left: `${Math.random() * 100}%`,
-                        top: `${Math.random() * 100}%`,
-                      }}
-                      animate={{
-                        opacity: [0, 1, 0],
-                        scale: [0, 1, 0],
-                        y: [-10, -30, -10],
-                      }}
-                      transition={{
-                        duration: 4 + Math.random() * 2,
-                        repeat: Infinity,
-                        delay: i * 0.8,
-                        ease: "easeInOut",
-                      }}
-                    />
-                  ))}
-                </div>
-              </div>
-
-              {/* Efectos decorativos */}
-              <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/50 to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-400/50 to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
-
-              {/* Partículas en las esquinas */}
-              <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                {[...Array(3)].map((_, i) => (
-                  <div
-                    key={i}
-                    className="absolute w-1 h-1 bg-violet-400 rounded-full animate-ping"
-                    style={{
-                      left: `${i * 8}px`,
-                      animationDelay: `${i * 200}ms`,
-                    }}
-                  />
-                ))}
-              </div>
-            </div>
-
-            {/* Resplandor exterior */}
-            <div className="absolute inset-0 bg-violet-500/20 blur-xl rounded-3xl -z-10 opacity-30 group-hover:opacity-60 transition-opacity duration-500" />
-          </motion.div>
-
+         
           {/* Contenido de texto */}
           <motion.div
             variants={fadeIn("left", 0.5)}
@@ -228,11 +54,11 @@ const About = () => {
 
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
                 <span className="bg-gradient-to-r from-white via-violet-200 to-white bg-clip-text text-transparent">
-                  React Developer
+                  Frontend Developer 
                 </span>
                 <br />
                 <span className="bg-gradient-to-r from-violet-400 to-purple-500 bg-clip-text text-transparent">
-                  con 5 años de experiencia
+                  con foco en escala y producto
                 </span>
               </h2>
             </div>
@@ -252,9 +78,10 @@ const About = () => {
             {/* Stats mejoradas */}
             <div className="grid grid-cols-3 gap-6 lg:gap-8">
               {[
-                { number: 5, label: "Años de\nExperiencia", suffix: "+" },
-                { number: 20, label: "Proyectos\nCompletados", suffix: "+" },
-                { number: 100, label: "Clientes\nSatisfechos", suffix: "%" },
+                { number: 4, label: "Años de\nExperiencia", suffix: "+" },
+                { number: 10, label: "Proyectos\nCompletados", suffix: "+" },
+                { number: 3, label: "E-commerce\nEn producción"},
+                
               ].map((stat, index) => (
                 <motion.div
                   key={index}

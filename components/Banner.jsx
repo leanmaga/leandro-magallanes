@@ -8,7 +8,7 @@ import styles from "../styles";
 
 const Banner = () => {
   const data =
-    "Especializado en React, JavaScript, Next js y Redux. Creador de experiencias web inmersivas y con el ojo en el detalle.";
+    "Especializado en React, JavaScript, Next js y Redux. Con experiencia en aplicaciones enterprise y e-commerce full-stack llevados a producción.";
 
   return (
     <section

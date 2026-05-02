@@ -6,6 +6,7 @@ import Services from "../components/Services";
 import Work from "../components/Work";
 import Contact from "../components/Contact";
 import UnifiedBackground from "@/components/UnifiedBackground";
+import Experience from "@/components/Experience";
 
 const Page = () => (
   <>
@@ -17,6 +18,7 @@ const Page = () => (
 
         <Nav />
         <About />
+        <Experience />
         <Services />
         <Work />
         <Contact />

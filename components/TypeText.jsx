@@ -16,11 +16,9 @@ const TypeText = () => {
       >
         <TypeAnimation
           sequence={[
-            "Desarrollador Front-End",
+            "Frontend Developer",
             2000,
-            "Especialista en React",
-            2000,
-            "Product Manager",
+            "Buenos Aires, Ar",
             2000,
           ]}
           speed={50}
