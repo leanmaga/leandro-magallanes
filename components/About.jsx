@@ -76,11 +76,11 @@ const About = () => {
             </div>
 
             {/* Stats mejoradas */}
-            <div className="grid grid-cols-3 gap-6 lg:gap-8">
+            <div className="grid grid-cols-3 gap-4 lg:gap-8 items-start">
               {[
                 { number: 4, label: "Años de\nExperiencia", suffix: "+" },
                 { number: 10, label: "Proyectos\nCompletados", suffix: "+" },
-                { number: 3, label: "E-commerce\nEn producción"},
+                { number: 3, label: "E‑commerce\nEn producción"},
                 
               ].map((stat, index) => (
                 <motion.div
@@ -90,8 +90,8 @@ const About = () => {
                   transition={{ delay: index * 0.2 }}
                   className="text-center relative"
                 >
-                  <div className="bg-gradient-to-br from-violet-500/10 to-purple-500/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 group hover:border-violet-400/30 transition-all duration-300">
-                    <div className="text-3xl lg:text-4xl font-bold mb-2">
+                  <div className="h-full min-h-[110px] flex flex-col items-center justify-center bg-gradient-to-br from-violet-500/10 to-purple-500/10 backdrop-blur-sm rounded-2xl p-4 lg:p-6 border border-white/10 group hover:border-violet-400/30 transition-all duration-300">
+                    <div className="text-2xl lg:text-4xl font-bold mb-2">
                       <span className="bg-gradient-to-r from-violet-400 to-purple-500 bg-clip-text text-transparent">
                         {isInView ? (
                           <CountUp start={0} end={stat.number} duration={3} />

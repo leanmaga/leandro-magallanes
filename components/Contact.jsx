@@ -22,7 +22,7 @@ const Contact = () => {
           />
         </div>
 
-        <div className="container mx-auto px-6 sm:px-8 lg:px-16 relative z-10">
+        <div className="container mx-auto px-3 sm:px-8 lg:px-16 relative z-10">
           <div className="flex flex-col lg:flex-row items-center justify-center min-h-[60vh] gap-12 lg:gap-20">
             {/* Texto de éxito */}
             <motion.div
@@ -75,7 +75,7 @@ const Contact = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
-              className="flex-1 max-w-md w-full"
+              className="flex-1 w-full lg:max-w-md"
             >
               <div className="glassmorphism rounded-3xl p-8 text-center border border-white/10">
                 <div className="mb-6">
@@ -128,15 +128,15 @@ const Contact = () => {
         <div className="absolute bottom-0 right-1/4 w-px h-32 bg-gradient-to-t from-purple-500/20 to-transparent" />
       </div>
 
-      <div className="container mx-auto px-6 sm:px-8 lg:px-16 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-center min-h-[70vh] gap-12 lg:gap-20">
+      <div className="container mx-auto px-3 sm:px-8 lg:px-16 relative z-10">
+        <div className="flex flex-col lg:flex-row items-center justify-center min-h-[70vh] gap-0 lg:gap-20">
           {/* Sección de texto */}
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 text-center lg:text-left max-w-lg"
+            className="hidden lg:flex flex-1 text-center lg:text-left max-w-lg"
           >
             <div className="space-y-6">
               <motion.h4
